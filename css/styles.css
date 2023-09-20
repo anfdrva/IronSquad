@@ -1,0 +1,142 @@
+:root {
+    --first-main-color: #2E2F42;
+    --second-main-color: #434455;
+    --third-main-color: #4D5AE5;
+    --hover-color: #404BBF;
+    --white-color: #FFFFFF;
+    --cloud-color: #F4F4FD;
+    --cornflower-color: #E7E9FC;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul {
+    padding-left: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+.container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid red;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* ----------------------------Header---------------------------------- */
+
+.header {
+    padding-top: 30px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #E7E9FC;
+    /* background-color: #05098F; */
+    /* background: linear-gradient(#011D79, 60%, #5CA5FF) */
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.header-list {
+    display: flex;
+    gap: 40px;
+}
+
+.header-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--first-main-color);
+    /* color: #FFFFFF; */
+    cursor: pointer;
+}
+
+
+.header-link:hover,
+.header-link:focus {
+    color: var(--hover-color);
+}
+
+
+/* ----------------------------Hero---------------------------------- */
+
+.hero {
+    /* background-color: var(--first-main-color); */
+    /* background: linear-gradient(#5CA5FF, #EEF240); */
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-1.jpg);
+    text-align: center;
+    padding-top: 230px;
+    padding-bottom: 232px;
+}
+
+.hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: var(--white-color);
+    margin-bottom: 48px;
+    width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-btn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--white-color);
+    background-color: var(--third-main-color);
+    cursor: pointer;
+    padding: 16px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: var(--hover-color);
+}
