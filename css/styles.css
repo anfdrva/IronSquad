@@ -8,6 +8,10 @@
     --cornflower-color: #E7E9FC;
 }
 
+html{
+    overflow: hidden;
+}
+
 p,
 h1,
 h2,
@@ -25,7 +29,9 @@ ul {
 
 body {
     font-family: 'Roboto', sans-serif;
+    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
 }
+
 
 .link {
     text-decoration: none;
@@ -41,7 +47,7 @@ body {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
 }
 
 .section {
@@ -58,11 +64,12 @@ img {
 /* ----------------------------Header---------------------------------- */
 
 .header {
-    padding-top: 30px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid #E7E9FC;
-    /* background-color: #05098F; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* border-bottom: 1px solid #E7E9FC; */
+    background-color: #FFFFFF;
     /* background: linear-gradient(#011D79, 60%, #5CA5FF) */
+    /* border-bottom: 1px solid #E7E9FC; */
 }
 
 .header-container {
@@ -74,7 +81,11 @@ img {
     display: flex;
     align-items: center;
     margin-right: auto;
-    padding: 20px;
+    /* padding: 20px; */
+}
+
+.header-logo-img{
+    margin-right: 200px;
 }
 
 .header-list {
@@ -99,15 +110,33 @@ img {
 }
 
 
+
 /* ----------------------------Hero---------------------------------- */
 
 .hero {
     /* background-color: var(--first-main-color); */
     /* background: linear-gradient(#5CA5FF, #EEF240); */
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-1.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.9), rgba(46, 47, 66, 0.9)), url(../images/bg-6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-image: url(../images/bg-1.jpg); */
     text-align: center;
-    padding-top: 230px;
-    padding-bottom: 232px;
+    padding-top: 100px;
+    padding-bottom: 135px;
+
+}
+
+/* .hero-logo-img{
+    margin: 0 auto;
+} */
+
+.hero-container{
+    display: flex;
+    justify-content: center;
+}
+
+.hero-content{
+    margin: auto;
 }
 
 .hero-title {
