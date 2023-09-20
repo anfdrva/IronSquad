@@ -67,7 +67,7 @@ img {
     padding-top: 10px;
     padding-bottom: 10px;
     /* border-bottom: 1px solid #E7E9FC; */
-    background-color: #FFFFFF;
+    background: linear-gradient(#d8d8da, #FFFFFF, #FFFFFF, #d8d8da);
     /* background: linear-gradient(#011D79, 60%, #5CA5FF) */
     /* border-bottom: 1px solid #E7E9FC; */
 }
@@ -84,7 +84,7 @@ img {
     /* padding: 20px; */
 }
 
-.header-logo-img{
+.header-logo{
     margin-right: 200px;
 }
 
@@ -94,6 +94,7 @@ img {
 }
 
 .header-link {
+    position: relative;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -101,39 +102,102 @@ img {
     color: var(--first-main-color);
     /* color: #FFFFFF; */
     cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.current.header-link {
+    color: #e78717;
+}
+
+.current.header-link::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 22px;
+    width: 100%;
+    height: 4px;
+    background-color: #e78717;
+    border-radius: 2px;
+}
 
 .header-link:hover,
 .header-link:focus {
-    color: var(--hover-color);
+    color: #e78717;
 }
 
+.header-contact-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--second-main-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-contact-link:hover,
+.header-contact-link:focus:focus {
+    color: #e78717;
+}
+
+.address {
+    font-style: normal;
+}
 
 
 /* ----------------------------Hero---------------------------------- */
 
 .hero {
-    /* background-color: var(--first-main-color); */
-    /* background: linear-gradient(#5CA5FF, #EEF240); */
     background-image: linear-gradient(rgba(46, 47, 66, 0.9), rgba(46, 47, 66, 0.9)), url(../images/bg-6.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-image: url(../images/bg-1.jpg); */
+    /* Изменено на cover */
+    width: 100%;
+    height: 100vh;
+    /* Изменено на 100vh (100% высоты окна) */
+    object-fit: cover;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 130px;
+}
+
+/* Добавлено новое свойство для контейнера */
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Центрируем по вертикали */
+    height: 100%;
+    /* Заполняем всю высоту секции */
+}
+
+/* Добавлено новое свойство для изображения */
+.hero-logo-img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.9), rgba(46, 47, 66, 0.9)), url(../images/bg-6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     text-align: center;
     padding-top: 100px;
     padding-bottom: 135px;
 
-}
+} */
 
 /* .hero-logo-img{
     margin: 0 auto;
 } */
 
-.hero-container{
+/* .hero-container{
     display: flex;
     justify-content: center;
-}
+} */
 
 .hero-content{
     margin: auto;
@@ -152,20 +216,23 @@ img {
 
 .hero-btn {
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: 600;
+    font-size: 18px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: var(--white-color);
-    background-color: var(--third-main-color);
+    background-color: #272a89;
     cursor: pointer;
-    padding: 16px 32px;
+    padding: 18px 100px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: 0;
+    border-radius: 30px;
+    /* border: 3px solid #FFFFFF; */
+    border: 2px solid white;
+    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
-
 .hero-btn:hover,
 .hero-btn:focus {
-    background-color: var(--hover-color);
+    background-color: #e78717;
+    color: #111;
 }
