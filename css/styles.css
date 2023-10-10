@@ -29,7 +29,7 @@ ul {
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
+    /* background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)); */
 }
 
 
@@ -143,6 +143,21 @@ img {
     font-style: normal;
 }
 
+.header-select {
+    display: block;
+    font-size: 16px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    padding: 4px 20px;
+    border: 1px solid var(--first-main-color);
+    border-radius: 10px;
+}
+
+.header-select:hover,
+.header-select:focus {
+    background-color: #e6e6e8;
+}
+
 
 /* ----------------------------Hero---------------------------------- */
 
@@ -212,4 +227,23 @@ img {
 .hero-btn:focus {
     background-color: #e78717;
     color: #111;
+}
+
+/* -----------------------------------------About Us---------------------------------------------- */
+
+.aboutUs{
+    background: linear-gradient(#272a89, #e78717);
+    opacity: 0.5;
+    width: 100%;
+    height: 100vh;
+}
+
+.aboutUs-text{
+    width: 500px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: white;
+    /* margin-top: 50px; */
 }
