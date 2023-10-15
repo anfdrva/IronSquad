@@ -61,6 +61,46 @@
         </select> -->
         <a href="./aboutUs.html">UA</a>
         <a href="./aboutUs.en.html">EN</a>
+        <button class="menu-open-btn" data-menu-open type="button">
+          <svg class="icon-open-btn" width="32" height="22">
+            <use
+              href="./images/symbol-defs.svg#icon-charm_menu-hamburger"
+            ></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div>
+          <div class="mob-close">
+            <button class="menu-close-btn" data-menu-close type="button">
+              <svg class="menu-close-icon">
+                <use href="./images/symbol-defs.svg#icon-close-black"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-item">
+              <a class="mob-menu-link current link" href="./index.html"
+                >Головна</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="./aboutUs.html">Про нас</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="./squads.html">Зміни</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="./gallery.html">Галерея</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="./partners.html">Партнери</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="./contacts.html">Контакти</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -81,5 +121,6 @@
         </div>
       </section>
     </main>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
