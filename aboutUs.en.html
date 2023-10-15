@@ -59,27 +59,72 @@
           <option value="ua">UA</option>
           <option value="en">EN</option>
         </select> -->
-        <a href="./aboutUs.html">UA</a>
-        <a href="./aboutUs.en.html">EN</a>
+        <!-- <a href="./aboutUs.html">UA</a>
+        <a href="./aboutUs.en.html">EN</a> -->
+        <ul class="header-list-languages list">
+          <li>
+            <a class="header-lang-link link" href="./aboutUs.html">UA</a>
+          </li>
+          <li>
+            <a class="header-lang-link link current" href="./aboutUs.en.html"
+              >EN</a
+            >
+          </li>
+        </ul>
+
+        <button class="menu-open-btn" data-menu-open type="button">
+          <svg class="icon-open-btn" width="32" height="22">
+            <use
+              href="./images/symbol-defs.svg#icon-charm_menu-hamburger"
+            ></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div>
+          <div class="mob-close">
+            <button class="menu-close-btn" data-menu-close type="button">
+              <svg class="menu-close-icon">
+                <use href="./images/symbol-defs.svg#icon-close-black"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="./index.en.html">Home</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link current link" href="./aboutUs.en.html"
+                >About Us</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="./squads.en.html">Squads</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="./gallery.en.html">Gallery</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="./partners.en.html"
+                >Partners</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="./contacts.en.html"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
       <section class="aboutUs">
         <div class="container aboutUs-container">
-          <p class="aboutUs-text">
-            Кумедна ж ти, прощайся без ґольфів! Єхидна, ґава, їжак ще й шиплячі
-            плазуни бігцем форсують Янцзи. Жебракують філософи при ґанку церкви
-            в Гадячі, ще й шатро їхнє п’яне знаємо.Гей, хлопці, не вспію - на
-            ґанку ваша файна їжа знищується бурундучком. Хвацький юшковар Філіп
-            щодня на ґанку готує сім’ї вечерю з жаб. На подушечці форми любої є
-            й ґудзик щоб пір’я геть жовте сховати. У ґазди є ж бо гевеї, які
-            шиють прості килими, наче хащі фацелій. З’їв аґрусу — та ягода
-            цілюща б’є жах інфекцій шипучим «ь». Файкою пихкаючи, щаслива ґаво —
-            мандруєш, зібгані цвяхи стеж! Щурячий бугай із їжаком-харцизом
-            в’ючись підписали ґешефт у єнах.
-          </p>
+          <p class="aboutUs-text"></p>
         </div>
       </section>
     </main>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
