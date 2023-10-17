@@ -368,9 +368,22 @@ img {
     margin: 0 auto;
 }
 
+.aboutUs-text {
 
-.aboutUs-text{
-    /* width: 500px; */
+    font-weight: 400;
+    font-size: 12px;
+    padding: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--first-main-color);
+    background: linear-gradient(to right, transparent, white, white, white, white, transparent);
+    text-align: center;
+}
+
+/* .aboutUs-text{
+    
+
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -379,10 +392,9 @@ img {
     background: linear-gradient( to right, transparent, white, white, white, white, transparent);
     padding: 20px;
     text-align: center;
-    /* border: 2px solid #272a89;
-    border-radius: 10px; */
-    /* margin-top: 50px; */
-}
+
+
+} */
 
 /* ------------------------------------------Gallery---------------------------------------------- */
 
@@ -605,7 +617,7 @@ img {
 
 .contacts-list{
     display: flex;
-    gap: 40px;
+    gap: 27px;
 
     flex-direction: column;
 }
@@ -825,6 +837,28 @@ img {
     .header-container{
         gap: 10px;
     }
+    .aboutUs-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+    .aboutUs-img{
+        width: 380px;
+        /* height: 210px; */
+    }
+    /* .aboutUs-text{
+        font-weight: 400;
+        font-size: 12px;
+        padding: 12px;
+    } */
+    /* .aboutUs-img{
+        width: 500px;
+    }
+    .aboutUs-text{
+        font-weight: 400;
+        font-size: 12px;
+    } */
     .contacts-list{
         flex-direction: row;
         gap: 20px;
@@ -869,6 +903,18 @@ img {
     }
     .hero-btn{
         padding: 18px 100px;
+    }
+    .aboutUs-container{
+        display: block;
+    }
+    .aboutUs-img{
+        width: 900px;
+        height: 100%;
+    }
+    .aboutUs-text{
+        font-weight: 500;
+        font-size: 16px;
+        padding: 20px;
     }
     .contacts-list{
         gap: 40px;
