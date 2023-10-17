@@ -119,7 +119,144 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <section class="aboutUs">
+        <div class="container aboutUs-container container-gallery">
+          <div class="img-container">
+            <div class="img">
+              <img src="./gallery/0CFA8A44-070D-4233-BF54-DCDD2D6B7D41.jpeg" />
+            </div>
+            <div class="img">
+              <img src="./gallery/1DBB24EC-718F-4FE9-9C7D-97D13370CB45.jpeg" />
+            </div>
+            <div class="img">
+              <img src="./gallery/22D27895-EDE5-4AB2-AF4B-9843D8300D26.jpeg" />
+            </div>
+            <div class="img">
+              <img src="./gallery/2936B118-B2F3-4E79-AD7D-702CA67985AE.jpeg" />
+            </div>
+            <div class="img">
+              <img src="./gallery/29E8C32D-196C-4564-8CE2-92AFF0E25269.jpeg" />
+            </div>
+            <div class="img">
+              <img src="./gallery/40126CC5-C9F1-4F25-9C12-B0558047D618.jpeg" />
+            </div>
+            <div class="img">
+              <img src="./gallery/4E898C4D-E6BF-44B9-9A98-538CD15FDD90.jpeg" />
+            </div>
+            <div class="img">
+              <img src="./gallery/52294A02-EE34-4B0B-8785-8C0F5321A7B9.jpeg" />
+            </div>
+            <div class="img">
+              <img src="./gallery/5D05C015-526D-4E22-B6A8-D1D74C986AE9.jpeg" />
+            </div>
+            <div class="img">
+              <img
+                class="photo"
+                src="./gallery/5FEDF65C-EC2A-4A7B-8AC5-210778AE17E4 (1).jpeg"
+              />
+            </div>
+            <div class="img">
+              <img src="./gallery/62894B61-1F2E-412A-B227-EDEB7B02693C.jpeg" />
+            </div>
+            <div class="img">
+              <img src="./gallery/70AB1DC1-B7A8-4F21-B867-463B0C950CFC.jpeg" />
+            </div>
+            <div class="img">
+              <img src="./gallery/95F284A8-5F76-495B-A65A-FCF94B66452D.jpeg" />
+            </div>
+            <div class="img">
+              <img src="./gallery/990A634B-4D34-4DEE-BE88-807299AA5BCC.jpeg" />
+            </div>
+            <div class="img">
+              <img src="./gallery/9ECBBF4E-B68E-4D51-BC8E-442A068C5527.jpeg" />
+            </div>
+            <div class="img">
+              <img
+                src="./gallery/BF0F4737-738A-4E5B-BCF4-C6D23C475BB0 (1).jpeg"
+              />
+            </div>
+            <div class="img">
+              <img src="./gallery/D2D201C7-0DAB-4E2A-9238-F4CE8B45B827.jpeg" />
+            </div>
+            <div class="img">
+              <img src="./gallery/D7EFAF1E-F5B1-4A7E-AF1E-01A08D41B141.jpeg" />
+            </div>
+            <div class="img">
+              <img src="./gallery/D97A22C2-F8C2-41FA-AE5A-A3A5CEB4E7AE.jpeg" />
+            </div>
+            <div class="img">
+              <img
+                src="./gallery/7FB4F407-042D-4803-9846-313C358602A3 (1).jpeg"
+              />
+            </div>
+            <div class="img">
+              <img src="./gallery/DDC063A4-B5F6-489F-ADF8-1E0999E25387.jpeg" />
+            </div>
+            <div class="img">
+              <img src="./gallery/F91D7BE4-2811-4CA9-AC8E-6FAE4DD78E83.jpeg" />
+            </div>
+          </div>
+          <div class="pop-up">
+            <span class="prev-btn">&lt;</span>
+            <span class="next-btn">&gt;</span>
+            <span class="close-btn">&times;</span>
+            <img src="./gallery/0CFA8A44-070D-4233-BF54-DCDD2D6B7D41.jpeg" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      // document.querySelectorAll(".img-container img").forEach((img) => {
+      //   img.onclick = () => {
+      //     document.querySelector(".pop-up").style.display = "block";
+      //     document.querySelector(".pop-up img").src = img.getAttribute("src");
+      //   };
+      // });
+
+      // document.querySelector(".pop-up span").onclick = () => {
+      //   document.querySelector(".pop-up").style.display = "none";
+      // };
+      const images = document.querySelectorAll(".img-container img");
+      const popup = document.querySelector(".pop-up");
+      const popupImg = document.querySelector(".pop-up img");
+      const closeBtn = document.querySelector(".close-btn");
+      const prevBtn = document.querySelector(".prev-btn");
+      const nextBtn = document.querySelector(".next-btn");
+
+      let currentIndex = 0;
+
+      // Отображение pop-up при клике на изображение
+      images.forEach((img, index) => {
+        img.addEventListener("click", () => {
+          currentIndex = index;
+          displayImage();
+          popup.style.display = "flex";
+        });
+      });
+
+      // Закрытие pop-up
+      closeBtn.addEventListener("click", () => {
+        popup.style.display = "none";
+      });
+
+      // Переключение к предыдущему изображению
+      prevBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        displayImage();
+      });
+
+      // Переключение к следующему изображению
+      nextBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        displayImage();
+      });
+
+      function displayImage() {
+        const imgSrc = images[currentIndex].getAttribute("src");
+        popupImg.src = imgSrc;
+      }
+    </script>
     <script src="./js/menu.js"></script>
   </body>
 </html>
