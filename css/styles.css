@@ -537,7 +537,7 @@ img {
 
 /* -------------------------------------------Partners----------------------------------------- */
 
-.partners-title{
+/* .partners-title{
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
@@ -546,17 +546,37 @@ img {
     color: var(--first-main-color);
     padding-top: 40px;
     margin-bottom: 50px;
+} */
+
+.partners-title {
+    font-size: 26px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--first-main-color);
+    padding-top: 20px;
+    margin-bottom: 30px;
 }
 
-.partners-list{
+/* .partners-list{
     display: flex;
     flex-wrap: wrap;
     gap: 48px 24px;
+} */
+
+.partners-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px 14px;
 }
 
-.partners-item{
+/* .partners-item{
     width: calc((100% - 48px) / 3);
-}
+} */
 
 .partners-link{
     display: block;
@@ -568,16 +588,24 @@ img {
     box-shadow: 0px 5px 10px rgba(46, 47, 66, 0.08), 0px 5px 1px rgba(46, 47, 66, 0.16), 0px 7px 1px rgba(46, 47, 66, 0.08);
 }
 
-.partners-info{
+/* .partners-info{
     background: var(--white-color);
     border: 1px solid var(--cornflower-color);
     border-top: none;
     padding-top: 32px;
-    padding-bottom: 32px;
-            
+    padding-bottom: 32px;         
+} */
+
+.partners-info {
+    background: var(--white-color);
+    border: 1px solid var(--cornflower-color);
+    border-top: none;
+    /* padding-top: 22px;
+    padding-bottom: 22px; */
+    padding: 20px 10px;
 }
 
-.partners-info-title{
+/* .partners-info-title{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -585,18 +613,33 @@ img {
     color: var(--first-main-color);
     margin-bottom: 8px;
     text-align: center;
+} */
+
+.partners-info-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--first-main-color);
+    /* margin-bottom: 8px; */
+    text-align: center;
+    width: 125px;
 }
 
 .partners-img{
-    /* border: 1px solid white; */
-    /* padding: 10px; */
-    height: 115px;
+    width: 100px;
+    margin: 0 auto;
 }
 
 .partners-img-content{
-    padding: 50px 30px;
+    padding: 30px 10px;
     border: 1px solid white;
 }
+
+/* .partners-img-content {
+    padding: 50px 30px;
+    border: 1px solid white;
+} */
 
 /* ------------------------------------------Contacts------------------------------------------------------ */
 
@@ -859,6 +902,33 @@ img {
         font-weight: 400;
         font-size: 12px;
     } */
+    /* .partners-title {
+        font-size: 36px;
+        padding-top: 40px;
+        margin-bottom: 50px;
+    } */
+        .partners-title {
+            margin-bottom: 10px;
+        }
+    .partners-list {
+        flex-direction: row;
+        gap: 20px;
+    }
+    .partners-info {
+        padding: 30px 5px;
+    }
+    .partners-info-title {
+        font-size: 18px;
+        /* margin-bottom: 8px; */
+        width: 220px;
+        margin: 0 auto;
+    }
+    .partners-img{
+        width: 160px;
+    }
+    .partners-img-content {
+        padding: 40px 30px;
+    }
     .contacts-list{
         flex-direction: row;
         gap: 20px;
