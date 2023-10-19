@@ -705,6 +705,9 @@ img {
         overflow-y: auto;
         max-height: 100vh;
     }
+    .aboutUs-container{
+        display: flex;
+    }
     .aboutUs-img{
         width: 380px;
     }
