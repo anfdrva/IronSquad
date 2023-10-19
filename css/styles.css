@@ -361,6 +361,7 @@ img {
     height: 100vh;
 }
 
+
 .aboutUs-img{
     padding-top: 20px;
     padding-bottom: 20px ;
@@ -832,6 +833,16 @@ img {
     background-color: #94959a;
 }
 
+.gallery-container {
+    /* display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px; */
+    overflow-y: auto;
+    max-height: 100vh;
+}
+
+
 /* --------------------------------------Adaptiv------------------------------------------------ */
 
 @media screen and (min-width: 428px){
@@ -895,13 +906,14 @@ img {
         gap: 10px;
     }
     .gallery-container{
-        display: flex;
+        /* display: flex;
         justify-content: center;
         align-items: center;
-        gap: 5px;
+        gap: 5px; */
         overflow-y: auto;
         max-height: 100vh;
     }
+    
     .aboutUs-img{
         width: 380px;
         /* height: 210px; */
